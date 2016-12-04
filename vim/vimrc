@@ -13,11 +13,14 @@ set lazyredraw                        " speedup vim
 set number                            " enable line numbers
 set rnu                               " relative numbers
 set nobackup                          " no backup files and so on
-set nowb                              " no backup files and so on
-set swapfile                          " no backup files and so on
+set nowb
+set noswapfile
 set backspace=indent,eol,start        " make backspace work as expected
 set list
 set listchars=tab:→\ ,trail:▶         " Visualize trailing elements
+set wildmenu                          " enhanced command line completion
+set showcmd                           " show command
+set ruler                             " show cursor position
 
 " Text format
 set tabstop=2
@@ -35,6 +38,10 @@ set incsearch
 set noerrorbells                      " disable bells
 set visualbell
 
+" Navigation
+set splitbelow                        " more natural splitting
+set splitright
+
 " Colors & Colorscheme
 set colorcolumn=80                    " visualize max width
 set t_Co=256
@@ -47,8 +54,12 @@ colorscheme gruvbox                   " best colorscheme in the world
 let mapleader=','
 
 inoremap jk <esc>                     " remap esc
-nmap <leader>, :w<cr>                 " shortcut for saving
-
+nnoremap <leader>v :vsplit<cr>        " split vertical
+nnoremap <leader>s :split<cr>         " split horizontal
+map <c-j> <c-w><down>                 " Easy navigation
+map <c-k> <c-w><up>
+map <c-h> <c-w><left>
+map <c-l> <c-w><right>
 
 " Plugin Settings
 
