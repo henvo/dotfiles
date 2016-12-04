@@ -1,0 +1,21 @@
+[user]
+  email = git@henvo.de
+  name = Henning Vogt
+[push]
+  default = simple
+[core]
+  editor = vim
+[color]
+  ui = true
+[alias]
+  br = branch
+  cm = commit -m
+  co = checkout
+  df = diff
+  st = status
+  s = status
+  sa = stash
+  mt = mergetool
+  pl = pull --rebase
+  aa = add --all
+  stp = subtree push --prefix

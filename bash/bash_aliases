@@ -1,0 +1,40 @@
+# Reload bash config
+alias reload!='source ~/.bashrc'
+
+# Detect which flavor of ls is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+    colorflag="--color"
+else # OS X `ls`
+    colorflag="-G"
+fi
+
+# Vim alias
+alias v='vim .'
+
+# Git alias
+alias g='git'
+
+# Filesystem aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias l="ls -lah ${colorflag}"
+alias la="ls -AF ${colorflag}"
+alias ll="ls -lFh ${colorflag}"
+alias lld="ls -l | grep ^d"
+alias rmf="rm -rf"
+
+# Helpers
+alias df='df -h'      # free disk space in Gigabytes
+alias du='du -h -c'   # calculate directory disk usage
+
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
+
+# Tmux aliases
+alias tls='tmux ls'
+alias tn='tmux new -s'
+alias ta='tmux attach -t'

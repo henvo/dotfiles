@@ -1,0 +1,31 @@
+# ignore duplicate entries and the ones starting with space
+HISTCONTROL=ignoreboth
+# append to the history file
+shopt -s histappend
+# history size
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# check the window size after each command and, if necessary
+shopt -s checkwinsize
+
+# source aliases
+if [[ -f ~/.bash_aliases ]]; then
+  source ~/.bash_aliases
+fi
+
+# add ~/bin to PATH
+if [[ -d ~/bin ]]; then
+  export PATH=~/bin:$PATH
+fi
+
+# source a localrc if exists
+if [[ -a ~/.localrc ]]; then
+  source ~/.localrc
+fi
+
+# VIM as editor
+export EDITOR='vim'
+
+# bash prompt
+PS1='\[\033[35m\]\t ${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
