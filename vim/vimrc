@@ -1,11 +1,11 @@
 set nocompatible                      " not compatible with vi
 
-source ~/.vim/plugins.vim
+source ~/.vim/plugins.vim             " Load plugins with vimplug
 
 " General settings
 set autoread                          " detect when a file changed
-set encoding=utf-8  
-set fileencodings=utf-8  
+set encoding=utf-8
+set fileencodings=utf-8
 
 syntax on                             " enable syntax
 set ttyfast                           " redraw fast
@@ -44,7 +44,16 @@ let g:gruvbox_contrast_dark='medium'
 colorscheme gruvbox                   " best colorscheme in the world
 
 " Keybindings
-let mapleader=","
+let mapleader=','
 
 inoremap jk <esc>                     " remap esc
 nmap <leader>, :w<cr>                 " shortcut for saving
+
+
+" Plugin Settings
+
+" FZF <3
+let g:fzf_layout = { 'down': '~25%' } " FZF layout when in tmux session
+nmap <silent> <leader>f :Files<cr>
+nmap <silent> <leader>c :Commits<cr>
+nmap <silent> <leader>b :Buffers<cr>
