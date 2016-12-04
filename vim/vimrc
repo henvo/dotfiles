@@ -54,8 +54,9 @@ colorscheme gruvbox                   " best colorscheme in the world
 let mapleader=','
 
 inoremap jk <esc>                     " remap esc
-nnoremap <leader>v :vsplit<cr>        " split vertical
-nnoremap <leader>s :split<cr>         " split horizontal
+nmap <silent> <leader>v :vsplit<cr>   " split vertical
+nmap <silent> <leader>s :split<cr>    " split horizontal
+nmap <silent> <leader>e :Explore<cr>  " Explore
 map <c-j> <c-w><down>                 " Easy navigation
 map <c-k> <c-w><up>
 map <c-h> <c-w><left>
