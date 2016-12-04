@@ -69,3 +69,14 @@ let g:fzf_layout = { 'down': '~25%' } " FZF layout when in tmux session
 nmap <silent> <leader>f :Files<cr>
 nmap <silent> <leader>c :Commits<cr>
 nmap <silent> <leader>b :Buffers<cr>
+
+" Ack
+if executable('ag')
+  let g:ackprg = 'ag --nogroup --nocolor --column'
+end
+
+nmap <leader>a :Ack!<Space>
+
+" Vimux
+nmap <leader>q :VimuxPromptCommand<cr>
+nmap <leader>w :VimuxRunLastCommand<cr>
