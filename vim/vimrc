@@ -70,7 +70,7 @@ nmap <silent> <leader>f :Files<cr>
 nmap <silent> <leader>c :Commits<cr>
 nmap <silent> <leader>b :Buffers<cr>
 
-let g:fzf_colors =                    " Set colorscheme colors
+let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
   \ 'hl':      ['fg', 'Comment'],
