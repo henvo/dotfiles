@@ -70,6 +70,20 @@ nmap <silent> <leader>f :Files<cr>
 nmap <silent> <leader>c :Commits<cr>
 nmap <silent> <leader>b :Buffers<cr>
 
+let g:fzf_colors =                    " Set colorscheme colors
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
 " Ack
 if executable('ag')
   let g:ackprg = 'ag --nogroup --nocolor --column'
