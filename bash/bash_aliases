@@ -18,6 +18,7 @@ alias g='git'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias dotfiles='cd ~/dotfiles'
 
 alias l="ls -lah ${colorflag}"
 alias la="ls -AF ${colorflag}"
