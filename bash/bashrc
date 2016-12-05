@@ -27,6 +27,11 @@ fi
 # VIM as editor
 export EDITOR='vim'
 
+# OSX Git bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # Get git branch for prompt
 parse_git_branch() {
  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
