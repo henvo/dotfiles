@@ -3,5 +3,5 @@
 echo 'Installing tmux...'
 echo '================='
 
-echo 'Symlinking vimrc'
+echo 'Symlinking tmux.conf'
 ln -s $PWD/tmux/tmux.conf ~/.tmux.conf
