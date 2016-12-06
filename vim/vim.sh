@@ -9,5 +9,7 @@ echo 'Symlinking vimrc'
 ln -s $PWD/vim/vimrc ~/.vim/vimrc
 echo 'Symlinking plugins.vim'
 ln -s $PWD/vim/plugins.vim ~/.vim/plugins.vim
+echo 'Symlinking snippets'
+ln -s $PWD/vim/snippets ~/.vim/snippets
 
 echo 'Vim successful installed!'

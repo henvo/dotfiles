@@ -9,6 +9,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'               " fuzzy finder
 Plug 'mileszs/ack.vim'                " text search
 Plug 'benmills/vimux'                 " run tmux commans from within vim
+Plug 'MarcWeber/vim-addon-mw-utils'   " needed for snipmate
+Plug 'tomtom/tlib_vim'                " same same
+Plug 'garbas/vim-snipmate'            " code shortcuts
 
 " Language specific plugins
 Plug 'fatih/vim-go', { 'for': 'go'}   " Go plugin
