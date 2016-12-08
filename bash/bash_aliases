@@ -30,7 +30,7 @@ alias rmf="rm -rf"
 alias df='df -h'      # free disk space in Gigabytes
 alias du='du -h -c'   # calculate directory disk usage
 
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ip="curl https://api.ipify.org; echo"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
