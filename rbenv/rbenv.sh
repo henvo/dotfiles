@@ -9,3 +9,7 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 # Try compiling
 cd ~/.rbenv && src/configure && make -C src
 
+# Symlink gemrc
+echo 'Symlinking gemrc'
+ln -s ~/dotfiles/ruby/gemrc ~/.gemrc
+

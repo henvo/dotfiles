@@ -11,3 +11,7 @@ ln -s $PWD/bash/bashrc ~/.bashrc
 
 echo 'Symlinking bash_aliases'
 ln -s $PWD/bash/bash_aliases ~/.bash_aliases
+
+echo 'Create bin dir in home directory'
+mkdir ~/bin
+
