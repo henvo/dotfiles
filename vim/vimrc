@@ -68,7 +68,7 @@ map <c-l> <c-w><right>
 " Plugin Settings
 
 " FZF <3
-let $FZF_DEFAULT_COMMAND = 'ag -l -g -U ""'
+let $FZF_DEFAULT_COMMAND = 'ag -U -l -g ""'
 let g:fzf_layout = { 'down': '~25%' } " FZF layout when in tmux session
 nmap <silent> <leader>f :Files<cr>
 nmap <silent> <leader>c :Commits<cr>
