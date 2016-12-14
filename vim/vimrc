@@ -11,6 +11,7 @@ syntax on                             " enable syntax
 set ttyfast                           " redraw fast
 set lazyredraw                        " speedup vim
 set updatetime=250
+set timeoutlen=200                    " make vim more snappy
 set number                            " enable line numbers
 set rnu                               " relative numbers
 set nobackup                          " no backup files and so on
@@ -22,6 +23,7 @@ set listchars=tab:→\ ,trail:▶         " Visualize trailing elements
 set wildmenu                          " enhanced command line completion
 set showcmd                           " show command
 set ruler                             " show cursor position
+set winwidth=80                       " minimal window width of 80
 
 " Text format
 set tabstop=2
@@ -66,7 +68,7 @@ map <c-l> <c-w><right>
 " Plugin Settings
 
 " FZF <3
-let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
+let $FZF_DEFAULT_COMMAND = 'ag -l -g -U ""'
 let g:fzf_layout = { 'down': '~25%' } " FZF layout when in tmux session
 nmap <silent> <leader>f :Files<cr>
 nmap <silent> <leader>c :Commits<cr>
@@ -88,7 +90,7 @@ let g:fzf_colors =
 
 " Ack
 if executable('ag')
-  let g:ackprg = 'ag --nogroup --nocolor --column'
+  let g:ackprg = 'ag --nogroup --nocolor --column -U'
 end
 
 nmap <leader>a :Ack!<Space>
