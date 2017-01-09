@@ -64,6 +64,8 @@ map <c-j> <c-w><down>                 " Easy navigation
 map <c-k> <c-w><up>
 map <c-h> <c-w><left>
 map <c-l> <c-w><right>
+noremap <Leader>y "+y
+noremap <Leader>p "+p
 
 " Plugin Settings
 
