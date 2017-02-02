@@ -49,18 +49,22 @@ set splitright
 set colorcolumn=80                    " visualize max width
 set t_Co=256
 set background=dark
+"set termguicolors
 let g:gruvbox_contrast_dark='medium'
-let g:gruvbox_contrast_dark='medium'
+let g:gruvbox_contrast_light='hard'
 colorscheme gruvbox                   " best colorscheme in the world
 
 " Keybindings
 let mapleader=','
 
-inoremap jk <esc>                     " remap esc
-nmap <silent> <leader>v :vsplit<cr>   " split vertical
-nmap <silent> <leader>s :split<cr>    " split horizontal
-nmap <silent> <leader>e :Explore<cr>  " Explore
-map <c-j> <c-w><down>                 " Easy navigation
+inoremap jk <esc>                         " remap esc
+nmap <silent> <leader>v :vsplit<cr>       " split vertical
+nmap <silent> <leader>s :split<cr>        " split horizontal
+nmap <silent> <leader>e :Explore<cr>      " Explore
+nmap <silent> <leader><Tab> :tabnew<cr>   " New Tab
+nmap <silent> <Tab> :tabn<cr>             " Next tab
+nmap <silent> <S-Tab> :tabp<cr>           " Previous tab
+map <c-j> <c-w><down>                     " Easy navigation
 map <c-k> <c-w><up>
 map <c-h> <c-w><left>
 map <c-l> <c-w><right>
