@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'morhetz/gruvbox'                " colorscheme
+Plug 'flazz/vim-colorschemes'         " ALL the colorschemes
 Plug 'tpope/vim-fugitive'             " awesome git wrapper
 Plug 'airblade/vim-gitgutter'         " visualize git status per line
 Plug 'tpope/vim-rails'                " rails highlighting, functionality
@@ -12,6 +12,9 @@ Plug 'benmills/vimux'                 " run tmux commans from within vim
 Plug 'MarcWeber/vim-addon-mw-utils'   " needed for snipmate
 Plug 'tomtom/tlib_vim'                " same same
 Plug 'garbas/vim-snipmate'            " code shortcuts
+Plug 'chriskempson/base16-vim'        " for testing purposes
+Plug 'tpope/vim-haml'                 " HAML, SASS, Coffee syntax
+
 
 " Language specific plugins
 Plug 'fatih/vim-go', { 'for': 'go'}   " Go plugin

@@ -49,10 +49,8 @@ set splitright
 set colorcolumn=80                    " visualize max width
 set t_Co=256
 set background=dark
-"set termguicolors
-let g:gruvbox_contrast_dark='medium'
-let g:gruvbox_contrast_light='hard'
-colorscheme gruvbox                   " best colorscheme in the world
+set term=screen-256color
+colorscheme solarized
 
 " Keybindings
 let mapleader=','

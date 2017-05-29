@@ -36,6 +36,7 @@ alias ip="curl https://api.ipify.org; echo"
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Tmux aliases
+alias tmux="tmux -2"
 alias tls='tmux ls'
 alias tn='tmux new -s'
 alias ta='tmux attach -t'
