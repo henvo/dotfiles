@@ -24,6 +24,7 @@ set wildmenu                          " enhanced command line completion
 set showcmd                           " show command
 set ruler                             " show cursor position
 set winwidth=80                       " minimal window width of 80
+set belloff=all                       " disable (visual) bell
 
 " Text format
 set tabstop=2

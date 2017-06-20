@@ -27,11 +27,6 @@ fi
 # VIM as editor
 export EDITOR='vim'
 
-# OSX Git bash completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
-
 # Get git branch for prompt
 parse_git_branch() {
  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -44,3 +39,12 @@ PS1="[\[\033[32m\]\w]\[\033[0m\] \[\033[1;31m\]\$(parse_git_branch)\n\[\033[1;36
 export PATH="$HOME/.rbenv/bin:$PATH"
 # Load rbenv automatically
 eval "$(rbenv init -)"
+
+# enable bash completion in interactive shells
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
