@@ -14,6 +14,7 @@ Plug 'tomtom/tlib_vim'                " same same
 Plug 'garbas/vim-snipmate'            " code shortcuts
 Plug 'chriskempson/base16-vim'        " for testing purposes
 Plug 'tpope/vim-haml'                 " HAML, SASS, Coffee syntax
+Plug 'vim-syntastic/syntastic'        " linting
 
 
 " Language specific plugins

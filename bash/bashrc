@@ -48,3 +48,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# More intelligent bash history browsing
+if [[ $- == *i* ]]
+then
+    bind '"\e[A": history-search-backward'
+    bind '"\e[B": history-search-forward'
+fi
