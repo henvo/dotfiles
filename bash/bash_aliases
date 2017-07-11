@@ -41,3 +41,6 @@ alias tmux="tmux -2"
 alias tls='tmux ls'
 alias tn='tmux new -s'
 alias ta='tmux attach -t'
+
+# Ansible aliases
+alias ap="ansible-playbook"
