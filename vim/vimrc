@@ -51,7 +51,7 @@ set colorcolumn=80                    " visualize max width
 set t_Co=256
 set background=dark
 set term=screen-256color
-colorscheme solarized
+colorscheme gruvbox
 
 " Keybindings
 let mapleader=','
