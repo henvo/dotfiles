@@ -25,6 +25,7 @@ set showcmd                           " show command
 set ruler                             " show cursor position
 set winwidth=80                       " minimal window width of 80
 set belloff=all                       " disable (visual) bell
+set clipboard=unnamedplus             " use `normal` clipboard
 
 " Text format
 set tabstop=2
