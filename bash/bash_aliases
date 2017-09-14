@@ -46,3 +46,6 @@ alias be='bundle exec'
 
 # Ansible aliases
 alias ap="ansible-playbook"
+
+# tmuxinator
+alias mux="tmuxinator"
