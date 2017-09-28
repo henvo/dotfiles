@@ -64,3 +64,6 @@ export NVM_DIR="$HOME/.nvm"
 reminder() {
   (sleep $1; gxmessage -nearmouse ${2:-Reminder}) &
 }
+
+# tmuxinator
+source ~/bin/tmuxinator.bash

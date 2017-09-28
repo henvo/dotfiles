@@ -15,6 +15,7 @@ Plug 'garbas/vim-snipmate'            " code shortcuts
 Plug 'chriskempson/base16-vim'        " for testing purposes
 Plug 'tpope/vim-haml'                 " HAML, SASS, Coffee syntax
 Plug 'vim-syntastic/syntastic'        " linting
+Plug 'jiangmiao/auto-pairs'           " Brackets
 
 
 " Language specific plugins
