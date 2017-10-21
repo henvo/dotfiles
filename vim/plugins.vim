@@ -17,6 +17,7 @@ Plug 'vim-syntastic/syntastic'        " linting
 Plug 'jiangmiao/auto-pairs'           " Brackets
 Plug 'mxw/vim-jsx'                    " JSX highlighting
 Plug 'pangloss/vim-javascript'        " Javascript highlighting
+Plug 'scrooloose/nerdtree'            " NERDtree
 
 
 " Language specific plugins

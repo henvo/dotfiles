@@ -60,7 +60,6 @@ let mapleader=','
 inoremap jk <esc>                         " remap esc
 nmap <silent> <leader>v :vsplit<cr>       " split vertical
 nmap <silent> <leader>s :split<cr>        " split horizontal
-nmap <silent> <leader>e :Explore<cr>      " Explore
 nmap <silent> <leader><Tab> :tabnew<cr>   " New Tab
 nmap <silent> <Tab> :tabn<cr>             " Next tab
 nmap <silent> <S-Tab> :tabp<cr>           " Previous tab
@@ -107,3 +106,6 @@ nmap <leader>w :VimuxRunLastCommand<cr>
 
 " Syntastic
 let g:syntastic_javascript_checkers = ['eslint']
+
+" NERDtree
+nmap <silent> <leader>e :NERDTreeToggle<cr>
