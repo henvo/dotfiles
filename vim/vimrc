@@ -108,4 +108,4 @@ nmap <leader>w :VimuxRunLastCommand<cr>
 let g:syntastic_javascript_checkers = ['eslint']
 
 " NERDtree
-nmap <silent> <leader>e :NERDTreeToggle<cr>
+nmap <silent> <leader>e :NERDTreeFind<cr>
