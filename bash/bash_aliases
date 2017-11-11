@@ -49,3 +49,6 @@ alias ap="ansible-playbook"
 
 # tmuxinator
 alias mux="tmuxinator"
+
+# xdg-open
+alias open="xdg-open"
