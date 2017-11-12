@@ -50,5 +50,6 @@ alias ap="ansible-playbook"
 # tmuxinator
 alias mux="tmuxinator"
 
-# xdg-open
+# Tools
 alias open="xdg-open"
+alias bc="bc -l"
