@@ -3,6 +3,8 @@ set nocompatible                      " not compatible with vi
 source ~/.vim/plugins.vim             " Load plugins with vimplug
 
 " General settings
+filetype plugin on
+
 set autoread                          " detect when a file changed
 set encoding=utf-8
 set fileencodings=utf-8
@@ -109,3 +111,8 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 " NERDtree
 nmap <silent> <leader>e :NERDTreeFind<cr>
+
+" SnipUtils
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsSnippetsDir="~/.vim/snippets"
+
