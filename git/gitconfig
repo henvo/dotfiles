@@ -1,6 +1,7 @@
 [user]
   email = git@henvo.de
   name = Henning Vogt
+	signingkey = 70157259A8A468B107E396593C81BB3E9233506F
 [push]
   default = simple
 [core]
@@ -10,6 +11,7 @@
 [alias]
   br = branch
   cm = commit -m
+  ci = commit -S -s
   co = checkout
   df = diff
   st = status
