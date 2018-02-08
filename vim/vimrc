@@ -116,3 +116,6 @@ nmap <silent> <leader>e :NERDTreeFind<cr>
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsSnippetsDir="~/.vim/snippets"
 
+
+" Markdown
+let g:vim_markdown_folding_disabled = 1
