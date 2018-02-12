@@ -10,7 +10,7 @@
   ui = true
 [alias]
   br = branch
-  cm = commit -m
+  cm = commit -S -s -m
   ci = commit -S -s
   co = checkout
   df = diff
