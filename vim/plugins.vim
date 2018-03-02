@@ -11,15 +11,14 @@ Plug 'benmills/vimux'                 " run tmux commans from within vim
 Plug 'tomtom/tlib_vim'                " same same
 Plug 'chriskempson/base16-vim'        " for testing purposes
 Plug 'tpope/vim-haml'                 " HAML, SASS, Coffee syntax
-Plug 'vim-syntastic/syntastic'        " linting
 Plug 'mxw/vim-jsx'                    " JSX highlighting
 Plug 'pangloss/vim-javascript'        " Javascript highlighting
 Plug 'scrooloose/nerdtree'            " NERDtree
 Plug 'SirVer/ultisnips'               " Autocompletion
 Plug 'honza/vim-snippets'             " Snippets for ultisnips
 Plug 'junegunn/goyo.vim'              " Distraction free writing
-Plug 'pope/vim-surround'
 Plug 'plasticboy/vim-markdown'
+Plug 'w0rp/ale'
 
 " Language specific plugins
 Plug 'fatih/vim-go', { 'for': 'go'}   " Go plugin
