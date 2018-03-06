@@ -61,13 +61,26 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Usage: reminder 10m tea
-reminder() {
+function reminder()
+{
   (sleep $1; gxmessage -nearmouse ${2:-Reminder}) &
 }
 
 # Simplify scanning
-scan() {
+function scan()
+{
   scanimage --device "brother4:net1;dev0" --format=png > $1.png
+}
+
+# Shortcut to set external monitor
+function set_external_monitor()
+{
+  xrandr --output eDP1 --auto --output DP1 --auto --${1:-left}-of eDP1 --primary
+}
+
+function disable_external_monitor()
+{
+  xrandr --output eDP1 --auto --output DP1 --off
 }
 
 # tmuxinator
