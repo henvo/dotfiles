@@ -85,3 +85,7 @@ function disable_external_monitor()
 
 # tmuxinator
 source ~/bin/tmuxinator.bash
+
+# autojump
+source /etc/profile.d/autojump.bash
+
