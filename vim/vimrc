@@ -29,6 +29,8 @@ set winwidth=80                       " minimal window width of 80
 set belloff=all                       " disable (visual) bell
 set clipboard=unnamedplus             " use `normal` clipboard
 
+set hi Normal ctermbg=none            " Do not overwrite terminal background
+
 " Text format
 set tabstop=2
 set shiftwidth=2
@@ -69,8 +71,6 @@ map <c-j> <c-w><down>                     " Easy navigation
 map <c-k> <c-w><up>
 map <c-h> <c-w><left>
 map <c-l> <c-w><right>
-noremap <Leader>y "+y
-noremap <Leader>p "+p
 
 " Plugin Settings
 
@@ -115,7 +115,6 @@ nmap <silent> <leader>e :NERDTreeFind<cr>
 " SnipUtils
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsSnippetsDir="~/.vim/snippets"
-
 
 " Markdown
 let g:vim_markdown_folding_disabled = 1
