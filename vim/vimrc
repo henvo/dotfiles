@@ -29,8 +29,6 @@ set winwidth=80                       " minimal window width of 80
 set belloff=all                       " disable (visual) bell
 set clipboard=unnamedplus             " use `normal` clipboard
 
-set hi Normal ctermbg=none            " Do not overwrite terminal background
-
 " Text format
 set tabstop=2
 set shiftwidth=2
@@ -118,3 +116,8 @@ let g:UltiSnipsSnippetsDir="~/.vim/snippets"
 
 " Markdown
 let g:vim_markdown_folding_disabled = 1
+
+
+" Foobar
+hi Normal ctermbg=none
+
