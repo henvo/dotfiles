@@ -19,6 +19,7 @@ Plug 'honza/vim-snippets'             " Snippets for ultisnips
 Plug 'junegunn/goyo.vim'              " Distraction free writing
 Plug 'plasticboy/vim-markdown'
 Plug 'w0rp/ale'
+Plug 'elixir-editors/vim-elixir'
 
 " Language specific plugins
 Plug 'fatih/vim-go', { 'for': 'go'}   " Go plugin
