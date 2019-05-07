@@ -95,7 +95,7 @@ let g:fzf_colors =
 
 " Ack
 if executable('ag')
-  let g:ackprg = 'ag --nogroup --nocolor --column -U'
+  let g:ackprg = 'ag --nogroup --nocolor --hidden --column -U'
 end
 
 nmap <leader>a :Ack!<Space>
