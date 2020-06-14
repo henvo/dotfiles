@@ -1,7 +1,6 @@
 [user]
-  email = git@henvo.de
+  email = henning@vogt.family
   name = Henning Vogt
-	signingkey = 70157259A8A468B107E396593C81BB3E9233506F
 [push]
   default = simple
 [core]

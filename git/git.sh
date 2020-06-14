@@ -4,4 +4,4 @@ echo 'Git'
 echo '===================='
 
 echo 'Symlinking git config'
-ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
+ln -s $PWD/git/gitconfig ~/.config/git/config
