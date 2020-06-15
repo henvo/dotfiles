@@ -1,6 +1,7 @@
 [user]
   email = henning@vogt.family
   name = Henning Vogt
+  signingkey = EF8372A12442BB202C65DC9886BD184BBD387F0B
 [push]
   default = simple
 [core]
