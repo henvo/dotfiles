@@ -15,7 +15,6 @@ set lazyredraw                        " speedup vim
 set updatetime=250
 set timeoutlen=200                    " make vim more snappy
 set number                            " enable line numbers
-set rnu                               " relative numbers
 set nobackup                          " no backup files and so on
 set nowb
 set noswapfile
