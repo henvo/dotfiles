@@ -54,6 +54,7 @@ set t_Co=256
 set background=dark
 set term=screen-256color
 colorscheme gruvbox
+au BufNewFile,BufRead,BufReadPost *.rabl set syntax=ruby
 
 " Keybindings
 let mapleader=','

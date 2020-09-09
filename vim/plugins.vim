@@ -23,7 +23,7 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'tpope/vim-endwise'
 
 " Language specific plugins
-Plug 'fatih/vim-go', { 'for': 'go'}   " Go plugin
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } " Golang plugin
 Plug 'kchmck/vim-coffee-script'       " CoffeeScript plugin
 
 call plug#end()
